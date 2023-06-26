@@ -1,0 +1,139 @@
+/* Family: [Montserrat] */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+/* Family: [Fraunces] */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+:root {
+/* Primary Colors */
+--dark-cyan: #3C8067;
+--cream: #F2EBE3;
+
+/* Neutral Colors*/
+--very-dark-blue: #1C232B;
+--dark-grayish-blue: #6C7289;
+--white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cream);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: var(--white);
+    margin: 20px;
+    border-radius: 6px;
+}
+
+.card-img img{
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.card-img img:nth-child(2) {
+    display: none;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.sub-title p {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #6C7289;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-family: 'Montserrat',sans-serif;
+    padding-bottom: 10px;
+}
+
+.title h2 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 27px;
+    padding-bottom: 12px;
+}
+
+.description p {
+    font-size: 12px;
+    color: #6C7289;
+    font-family: 'Montserrat',sans-serif;
+    padding-bottom: 15px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+span.main {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    color: #3C8067;
+}
+
+span.discount {
+    padding-left: 15px;
+    color: #6C7289;
+    font-weight: 400;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+}
+
+.btn-container button {
+    width: 100%;
+    font-size: 12px;
+    padding: 13px;
+    background: #3C8067;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+}
+
+button i {
+    margin-right: 10px;
+}
+
+/* tablet device 768px */
+
+@media only screen and (min-width: 768px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        width: 453px;
+}
+    .card-content {
+        width: 600px;
+    }
+
+    .card-img img{
+        display: none;
+        border-radius: 6px 0px 0px 6px;
+}
+
+    .card-img img:nth-child(2) {
+        display: block;
+}
+
+
+}

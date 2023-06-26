@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    /* Primary */
+    --bright-orange: #E38826;
+    --dark-cyan: #006970;
+    --very-dark-cyan: #004241;
+
+    /* Neutral */
+    --transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-background-headings-buttons:  hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--very-light-gray-background-headings-buttons);
+    font-family: 'Lexend Deca', sans-serif;
+    overflow: hidden;
+}
+
+.card {
+    margin: 20px;
+}
+
+.section {
+    padding: 30px;
+}
+
+.section.orange {
+    background: var(--bright-orange);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.section.blue {
+    background: var(--dark-cyan);
+}
+
+.section.green {
+    background: var(--very-dark-cyan);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.title h3 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: var(--transparent-white-paragraphs);
+    padding-bottom: 20px;
+}
+
+.description p {
+    font-size: 14px;
+    color: var(--transparent-white-paragraphs);
+    padding-bottom: 15px;
+}
+
+.section.orange .btn-container button {
+    padding: 8px 17px;
+    background: var(--very-light-gray-background-headings-buttons);
+    border-radius: 20px;
+    border: 1px solid #E38826;
+    font-size: 11px;
+    font-weight: 700;
+    color: #E38826;
+}
+
+.section.blue .btn-container button {
+    padding: 8px 17px;
+    background: var(--very-light-gray-background-headings-buttons);
+    border-radius: 20px;
+    border: 1px solid #006970;
+    font-size: 11px;
+    font-weight: 700;
+    color: #006970;
+}
+
+.section.green .btn-container button {
+    padding: 8px 17px;
+    background: var(--very-light-gray-background-headings-buttons);
+    border-radius: 20px;
+    border: 1px solid #004241;
+    font-size: 11px;
+    font-weight: 700;
+    color: #004241;
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 600px;
+    }
+
+    .section.orange {
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .section.green {
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    .description p {
+        font-size: 10px;
+        color: var(--transparent-white-paragraphs);
+        padding-bottom: 50px;
+    }
+
+    .section .btn-container button:hover {
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+}

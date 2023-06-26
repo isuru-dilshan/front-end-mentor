@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* Primary */
+    --soft-blue: #8BACDA;
+    --cyan: #00FFF7;
+
+    /* Neutral */
+    --very-dark-blue-mainBG: #0D192B;
+    --very-dark-blue-cardBG: #14253D;
+    --very-dark-blue-line: #2F415B;
+    --white: #FFFFFF; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--very-dark-blue-mainBG);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 280px;
+    background: var(--very-dark-blue-cardBG);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.title h4 {
+    color: var(--white);
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.pharagraph p {
+    color: var(--soft-blue);
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.nft-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.nft,
+.days {
+    display: flex;
+    flex-direction: row;
+}
+
+.nft p {
+    color: #00FFF7;
+    font-size: 13px;
+    padding-left: 8px;
+}
+
+.days p {
+    color: var(--soft-blue);
+    font-size: 13px;
+    padding-left: 8px;
+}
+
+hr {
+    margin-top: 10px;
+    border: 1px solid #2F415B;
+}
+
+.profile {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.profile-img img {
+    height: 28px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-content p {
+    color: var(--soft-blue);
+    font-size: 13px;
+    padding-left: 14px;
+}
+
+span {
+    color: var(--white);
+    padding-left: 5px;
+}

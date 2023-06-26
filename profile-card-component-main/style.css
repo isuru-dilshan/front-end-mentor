@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+    --dark-cran: #19A2AE;
+    --very-dark-desaturated: #2D3248;
+    --dark-grayish-blue: #6A6F81;
+
+    /* Neutral */
+    --dark-gray: #969696;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url(images/bg-pattern-top.svg); */
+    background: var(--dark-cran);
+}
+
+.card {
+    width: 280px;
+}
+
+.card-img img{
+    width: 100%;
+    position: relative;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.profile-section {
+    background: #fff;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.profile-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-img img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.user-cuntry p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+

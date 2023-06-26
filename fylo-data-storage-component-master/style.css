@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+    --gradient-one: #FFA399;
+    --gradient-two: #FF4D97;
+    /* Netuarl*/
+    --pale-blue: #DDDBFF;
+    --grayish-blue: #848794;
+    --dark-blue: #1D2C67;
+    --very-dark-blue: #0C122C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    width: 280px;
+}
+
+.section-one {
+    background: var(--dark-blue);
+    border-radius: 10px 60px 10px 10px;
+    padding: 30px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.icons {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-one {
+    background: #0C122C;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.icon-one img {
+    height: 17px;
+    margin: 0px 0px 0px 10px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-two {
+    background: #0C122C;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.icon-two img {
+    height: 15px;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.icon-three {
+    background: #0C122C;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.icon-three img {
+    height: 13px;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.section-two {
+    background: var(--dark-blue);
+    margin-top: 20px;
+    padding: 25px;
+    position: relative;
+}
+
+.description p {
+    color: var(--grayish-blue);
+    font-family: 'Raleway:', sans-serif;
+    font-size: 12px;
+    padding: 8px;
+    font-weight: 700;
+}
+
+.description span {
+    color: #DDDBFF;
+}
+
+.prograce-bar progress {
+    width: 100%;
+    padding: 10px;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #DDDBFF;
+    font-weight: 700;
+    font-family: 'Raleway:', sans-serif;
+    padding-top: 5px;
+}
+
+.left {
+    background: #DDDBFF;
+    width: 130px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 30%;
+    top: 62%;
+    transform: translateY(50%);
+}
+
+.left p {
+    font-size: 28px;
+    font-family: 'Raleway:', sans-serif;
+    font-weight: 700;
+}
+
+.gb p {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        background-color: #0C122C !important; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url(images/bg-desktop.png);
+        background-repeat: repeat-x;
+        background-size: contain;
+        background-position: bottom;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+    }
+
+    .section-one {
+        margin-right: 20px;
+        width: 200px;
+    }
+
+    .section-two {
+        margin-right: 20px;
+        width: 480px;
+    }
+}
